@@ -9,6 +9,7 @@ public class HomeWorkApp2 {
         PositiveNegative2 (); {
             System.out.println(PositiveNegative2 ());
         }
+        line();
     }
     public static boolean TwoNumbers () {
         int a = 13, b = 37;
@@ -32,5 +33,13 @@ public class HomeWorkApp2 {
     public static boolean PositiveNegative2 () {
         int mol = -5;
         return mol < 0;
+    }
+    public static void line () {
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                System.out.print("1 0 ");
+            }
+            System.out.println("");
+        }
     }
 }
