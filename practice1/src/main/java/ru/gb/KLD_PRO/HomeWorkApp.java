@@ -1,6 +1,6 @@
 package ru.gb.KLD_PRO;
 
-public class HomeWorkApp<sout> {
+public class HomeWorkApp {
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
