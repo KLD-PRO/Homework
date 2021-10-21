@@ -5,7 +5,7 @@ public class HomeWorkApp2 {
         TwoNumbers(); {
             System.out.println(TwoNumbers());
         }
-
+        PositiveNegative ();
     }
     public static boolean TwoNumbers () {
         int a = 13, b = 37;
@@ -15,6 +15,15 @@ public class HomeWorkApp2 {
         }
         else {
             return false;
+        }
+    }
+    public static void PositiveNegative () {
+        int val = 0;
+        if (val < 0) {
+            System.out.println("Отрицательное");
+        }
+        else {
+            System.out.println("Положительное");
         }
     }
 }
