@@ -1,11 +1,15 @@
 package ru.gb.KLD_PRO;
 
+import java.util.Arrays;
+
 public class HomeWorkApp3 {
+
     public static void main(String[] args) {
         dataReplacement();
         emptyIntegerArray();
         multiplicationСycle();
         squareTwoDimensionalIntegerArray();
+        System.out.println(Arrays.toString(returnArray(3,5)));
 
     }
 
@@ -55,4 +59,12 @@ public class HomeWorkApp3 {
             System.out.println();
         }
     }
+    public static int[] returnArray(int len, int initialValue) {
+        int[] fsb = new int[len];
+        for (int i = 0; i < len; i++) {
+            fsb[i] = initialValue;
+        }
+        return fsb;
+    }
+
 }
