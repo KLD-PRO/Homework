@@ -5,6 +5,7 @@ public class HomeWorkApp3 {
         dataReplacement();
         emptyIntegerArray();
         multiplicationСycle();
+        squareTwoDimensionalIntegerArray();
 
     }
 
@@ -33,6 +34,25 @@ public class HomeWorkApp3 {
                 aaa[i] = aaa[i] * 2;
             }
             System.out.print(aaa[i] + " ");
+        }
+    }
+    public static void squareTwoDimensionalIntegerArray () {
+        System.out.println();
+        int[][] arr = {
+                {0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0},
+        };
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (i == j) {
+                    arr[i][j] = 1;
+                }
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
         }
     }
 }
