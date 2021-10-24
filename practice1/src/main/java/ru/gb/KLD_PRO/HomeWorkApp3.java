@@ -5,11 +5,13 @@ import java.util.Arrays;
 public class HomeWorkApp3 {
 
     public static void main(String[] args) {
+        int[] orm = {7, 4, 1, 2, 3, 6, 9, 8, 5};
         dataReplacement();
         emptyIntegerArray();
         multiplicationСycle();
         squareTwoDimensionalIntegerArray();
         System.out.println(Arrays.toString(returnArray(3,5)));
+        minMax(orm);
     }
 
     public static void dataReplacement() {
@@ -58,6 +60,23 @@ public class HomeWorkApp3 {
             fsb[i] = initialValue;
         }
         return fsb;
+    }
+    public static void minMax(int[] orm){
+        int max = orm[0];
+        int min = orm[0];
+
+        for (int i = 0; i < orm.length; i++) {
+            if (orm[i] > max) {
+                max = orm[i];
+            }
+        }
+        for (int i = 0; i < orm.length; i++) {
+            if (orm[i] < min) {
+                min = orm[i];
+            }
+        }
+        System.out.print("max = " + max + " , ");
+        System.out.println("min = " + min);
     }
 
 }
