@@ -10,7 +10,6 @@ public class HomeWorkApp3 {
         multiplicationСycle();
         squareTwoDimensionalIntegerArray();
         System.out.println(Arrays.toString(returnArray(3,5)));
-
     }
 
     public static void dataReplacement() {
@@ -42,19 +41,13 @@ public class HomeWorkApp3 {
     }
     public static void squareTwoDimensionalIntegerArray () {
         System.out.println();
-        int[][] arr = {
-                {0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0},
-        };
+        int[][] a = new int [5][5];
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 if (i == j) {
-                    arr[i][j] = 1;
+                    a[i][j] = a[i][4 - i] = 1;
                 }
-                System.out.print(arr[i][j] + " ");
+                System.out.print(a[i][j] + " ");
             }
             System.out.println();
         }
