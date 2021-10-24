@@ -6,12 +6,16 @@ public class HomeWorkApp3 {
 
     public static void main(String[] args) {
         int[] orm = {7, 4, 1, 2, 3, 6, 9, 8, 5};
+        int[] end = {3, 3, 5, 5};
         dataReplacement();
         emptyIntegerArray();
         multiplicationСycle();
         squareTwoDimensionalIntegerArray();
         System.out.println(Arrays.toString(returnArray(3,5)));
         minMax(orm);
+        boolean b = returnTrue(end); {
+            System.out.println(returnTrue(end));
+        }
     }
 
     public static void dataReplacement() {
@@ -78,5 +82,18 @@ public class HomeWorkApp3 {
         System.out.print("max = " + max + " , ");
         System.out.println("min = " + min);
     }
-
+    public static boolean returnTrue ( int[] end){
+        int rSum = 0;
+        int lSum = 0;
+        for (int i = 0; i < end.length; i++) {
+            rSum += end[i];
+        }
+        for (int i = 0; i < end.length; i++) {
+            lSum += end[i];
+            if (lSum == rSum - lSum) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
