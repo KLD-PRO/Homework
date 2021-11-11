@@ -1,11 +1,13 @@
 package ru.gb.KLD_PRO;
 
 public class Cat extends Animal {
+    private String animalName;
+
     public Cat(int runDistance, int swimDistance, float jumpHeight) {
         super(runDistance, swimDistance, jumpHeight);
     }
 
-     private int maxRunDistance = 200;
+    private int maxRunDistance = 200;
     private float maxJumpHeight = 2.0F;
     private int maxSwimDistance = 3; //
 
@@ -16,6 +18,7 @@ public class Cat extends Animal {
 
     @Override
     public String getAnimalName() {
+        
         return animalName;
     }
 
@@ -31,7 +34,7 @@ public class Cat extends Animal {
 
     @Override
     public void swim(double swim) {
-        System.out.println(swim <= maxSwimDistance ? "swim: false, Кошки не плавают !");
+        System.out.println(swim <= maxSwimDistance ? "swim: true, но медленно." : "swim: false, кошка вообще не доплыла!");
     }
 
 }

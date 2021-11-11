@@ -6,14 +6,17 @@ public abstract class Animal {
         private int swimMaxDistance;
         private float jumpMaxDistance;
 
-
         public Animal(int runMaxDistance, int swimMaxDistance, float jumpMaxDistance) {
             this.runMaxDistance = runMaxDistance;
             this.swimMaxDistance = swimMaxDistance;
             this.jumpMaxDistance = jumpMaxDistance;
         }
 
-               public void run(int runDistance) {
+    public Animal(String animalName) {
+
+    }
+
+    public void run(int runDistance) {
             System.out.println("run: " + (runDistance <= runMaxDistance));
         }
         public void swim(int swimDistance) {
@@ -24,4 +27,7 @@ public abstract class Animal {
         }
 
 
+    public abstract String getAnimalName();
+
+    public abstract void swim(double swim);
 }
